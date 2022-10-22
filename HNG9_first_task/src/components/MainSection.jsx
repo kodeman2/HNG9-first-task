@@ -2,8 +2,8 @@ import "./mainsection.css";
 export default function MainSection() {
 const data = {
 
- name: 'olagunju oluwakolade',
- id: 'HNG-00909',
+ name: 'Olagunju Oluwakolade',
+ id: 'HNG-',
 
 
 }
