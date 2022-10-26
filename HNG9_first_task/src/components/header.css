@@ -13,7 +13,7 @@
  opacity: 0.9;
  width: 40px;
  height: 40px;
- transition: 0.4s all ease;
+ transition: 0.2s all ease;
 }
 
 .headershare:hover{
@@ -46,7 +46,7 @@
  top: 35px;
  right:259px;
  opacity: 0;
- transition: 0.4s all ease;
+ transition: 0.2s all ease;
 }
 
 .headershare:hover ~ .description{
@@ -94,7 +94,7 @@ justify-content: center;
  height: 100%;
  
  border-radius: 50%;
-  transition: 0.4s all ease;
+  transition: 0.2s all ease;
 }
 
 .profile-hover:hover{
@@ -112,7 +112,7 @@ justify-content: center;
  bottom: 12.5%;
  left: calc(50% - 10px);
  opacity: 0;
- transition: 0.4s all ease;
+ transition: 0.2s all ease;
 }
 
 .profilecontainer p{
