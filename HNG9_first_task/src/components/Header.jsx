@@ -24,9 +24,11 @@ export default function header() {
      <div className="profilecontainer">
       <div className="pr-img-container">
        <img 
-       id='profile__img'
+       id='profile_img'
        src='..\images\profile__img.svg' alt=""  />
-      
+       <div className="profile-hover">
+        <img className="profile-hover-img" src='..\images\profile_hover.svg' alt=""  />
+       </div>
       </div>
       <p id='twitter'>Kodeman_</p>
       <p id='slack'>Olagunju Oluwakolade</p>

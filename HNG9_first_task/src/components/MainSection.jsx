@@ -48,7 +48,17 @@ export default function MainSection() {
     </button>  </a>)
 }
  </div>
-       <div className="socialcontainer">1</div>
+       <div className="socialcontainer">
+<img
+src='..\images\slack.svg'
+ />
+ <a href="https://github.com/kodeman2" target='_blank'  >
+  <img
+  src='..\images\github.svg'
+  />
+  </a>
+
+       </div>
     </div>
   );
 }
