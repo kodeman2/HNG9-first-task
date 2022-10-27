@@ -25,7 +25,7 @@ export default function header() {
       <div className="pr-img-container">
        <img 
        id='profile__img'
-       src='..\images\profile__img.jpg' alt=""  />
+       src='..\images\myimg.jpeg' alt=""  />
        <div className="profile-hover">
         <img className="profile-hover-img" src='..\images\profile_hover.svg' alt=""  />
        </div>
