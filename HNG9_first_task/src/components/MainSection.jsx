@@ -21,7 +21,7 @@ export default function MainSection() {
     {
         id: 'book__python',
         title: 'Python Books',
-        link: 'https://books.zuri.team/python-for-beginners?ref_id=olagunju_oluwakolade'
+        link: 'https://books.zuri.team/python-for-beginners?ref_id=Olagunju_Oluwakolade'
     },
     {
         id: 'pitch',
