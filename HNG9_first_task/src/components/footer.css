@@ -30,7 +30,23 @@ border-top: 1px solid #eaecf0;
 
 @media screen and (max-width: 768px) {
  .footer{
-     display: none;
+    padding:0  16px;
  }
+
+    .footercontainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        height: 132px;
+        gap: 16px;
+        padding:32px 0px 0px 0px;
+   
+    }
+
+    .footercontainer p{
+        line-height: 20px;
+        font-size: 14px;
+    }
  
 }
