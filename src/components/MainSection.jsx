@@ -1,4 +1,5 @@
 import "./mainsection.css";
+import {Link } from "react-router-dom";
 
 export default function MainSection() {
 
@@ -33,6 +34,9 @@ export default function MainSection() {
         title: 'Design Books',
         link: 'https://books.zuri.team/design-rules'
     },
+
+
+    
 ]
 
 
@@ -41,12 +45,15 @@ export default function MainSection() {
          
       <div className="linkcontainer">
 {
-  Data?.map((item, i) => <a key={i} href={item.link} target='_blank' rel="noreferrer" >
-    <button id={item.id} 
+  Data?.map((item, i) => <a key={i} href={item.link} target='_blank' rel="noreferrer"  id={item.id} 
     className="linkcontainer_btn">
       {item.title}
-    </button>  </a>)
+     </a>)
 }
+
+<Link to='/contact' className="linkcontainer_btn" id='contact__btn'>contact me</Link>
+
+
  </div>
        <div className="socialcontainer">
 <img
