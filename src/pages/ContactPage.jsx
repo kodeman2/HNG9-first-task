@@ -49,7 +49,7 @@ function ContactPage() {
               <input
                 placeholder="Enter your first name"
                 type="text"
-                name="first_name"
+                name="firstname"
                 // firstname validation
                 className={`form-control ${
                   errors.firstname ? "is-invalid" : ""
@@ -121,6 +121,7 @@ function ContactPage() {
               // message validation
               className={`form-control ${errors.message ? "is-invalid" : ""}`}
               id="message"
+              name="message"
               {...register("message", { required: "Please enter a message" })}
               onKeyUp={() => trigger("message")}
             ></textarea>
