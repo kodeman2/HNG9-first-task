@@ -1,10 +1,10 @@
-# HNG9-first-task
+# HNG9-first-task + Second Task
 
-creating a single page app using react.
+creating a single page app using react. adding a contact page path to the app.
 By Olagunju Oluwakolade .A
 Task details:
 
-# Front-End Stage 1 Task
+# Front-End Stage 1 Task details
 
 - Create a page like Linktree that allows a person show their personal profile and link to various digital things that they sell. **Details below.**
 - Make frequent atomic commits to your GitHub repository and keep standard on commit messages.
@@ -22,3 +22,15 @@ Task details:
 - A Link styles as a Button with an id **‘book\_\_python’** that redirects to to [https://books.zuri.team](https://books.zuri.team)/python-for-beginners?ref_id=<yourslackname>, where you feature the book as if you were selling it.The reference id must be unique and will give you royalties if any sales of the book come
 - A Link styles as a Button with an id **‘pitch’** that redirects to to [https://background.zuri.team](https://background.zuri.team), where you pitch a service for doing background checks on coders.Use a good, selling sentence.
 - A Link styles as a Button with an id **‘book\_\_design’** that redirects to to [https://books.zuri.team/design-rules](https://books.zuri.team/design-rules) where you pitch the free design book offered by Zuri.
+
+
+2nd Task Details:
+Continue from the stage 1 task,
+Add another anchor tag styled as a Button with an id of 'contact' that redirects to “/contact” page in your app.
+NB. The contact page path must be "/contact"
+The contact page should have a form with the following details:
+A First and last name input fields with ids ‘first_name’ and ‘last_name’ respectively
+An Email address input field with an id of ‘email’
+A Textarea with an id of ‘message’ to contain the message of the person
+A button with an id of ‘btn__submit’ that will submit the form
+All fields should have appropriate label tags
