@@ -1,12 +1,15 @@
 .contact__contianer {
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100%;
   width: 100%;
-  padding: 0px 32px;
+  padding:64px  0px 96px 0px;
+  
   gap: 64px;
+
 }
 
 .contact__form {
@@ -167,10 +170,13 @@ textarea::placeholder {
   box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
 }
 
+
+
 .checkcontainer input:checked ~ .checkmark {
   background-color: #fff;
   border: 1px solid #1570ef;
 }
+
 
 .checkmark:after {
   content: "";
@@ -192,6 +198,10 @@ textarea::placeholder {
   transform: rotate(45deg);
 }
 
+
+
+
+
 .contact_form button {
   width: 100%;
   height: 48px;
@@ -200,6 +210,8 @@ textarea::placeholder {
   border: 1px solid #1570ef;
   box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
   color: #ffffff;
+  padding: 12px 20px 12px 20px;
+  gap: 8px;
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
@@ -212,22 +224,26 @@ textarea::placeholder {
 }
 
 .contact_form button:hover {
-  background: #84caff;
-  border: 1px solid #84caff;
+  background: #175cd3;
+  border: 1px solid #175cd3;
+
 }
 
-.contact_form button:active {
+/* .contact_form button:active {
   background: #84caff;
   border: 1px solid #84caff;
-}
+} */
 
 .contact_form button:focus {
-  outline: none;
+ background: #1570ef;
+ border: 1px solid #1570EF;
+box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #D1E9FF;
+
 }
 
 .contact_form button:disabled {
-  background: #84caff;
-  border: 1px solid #84caff;
+  background: #b2ddff;
+  border: 1px solid #b2ddff;
 }
 
 .contact_form button:disabled:hover {
@@ -261,6 +277,9 @@ textarea::placeholder {
 }
 
 @media screen and (max-width: 768px) {
+ .contact__contianer{
+  padding: 64px 32px 96px 32px;
+ }
 
 
   .contact_form {

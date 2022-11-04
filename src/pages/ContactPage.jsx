@@ -1,9 +1,15 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
 import './contactpage.css'
 
+
+// contact page function
+
 function ContactPage() {
+
+  // form validation with react Hooks form
+
   const {
     register,
     handleSubmit,
@@ -12,13 +18,21 @@ function ContactPage() {
     trigger,
   } = useForm();
 
+  // form submit function
+
   const onSubmit = (data) => {
+
+   //form result function
     console.log(data);
     reset();
+
+
+    alert("Message sent successfully");
   };
 
   const name="kodeman_"
- 
+
+
 
 
   return (
@@ -33,12 +47,13 @@ function ContactPage() {
         
        
         <div className="form-group">
-          <label htmlFor="firstname">Firstname</label><br/>
+          <label htmlFor="first_name">Firstname</label><br/>
           <input
           placeholder="Enter your first name"
             type="text"
+            name="first_name"
             className={`form-control ${errors.firstname ? "is-invalid" : ""}`}
-            id="firstname"
+            id="first_name"
             {...register("firstname", { required: "" })}
             onKeyUp={() => trigger("firstname")}
           />
@@ -49,12 +64,13 @@ function ContactPage() {
           )}
         </div>
         <div className="form-group">
-          <label htmlFor="lastname">Lastname</label> <br/>
+          <label htmlFor="last_name">Lastname</label> <br/>
           <input
           placeholder="Enter your last name"
             type="text"
+            name="lastname"
             className={`form-control ${errors.lastname ? "is-invalid" : ""}`}
-            id="lastname"
+            id="last_name"
             {...register("lastname", { required: "" })}
             onKeyUp={() => trigger("lastname")}
           />
@@ -64,12 +80,15 @@ function ContactPage() {
             </small>
           )}
         </div>
+       
+            
         </div>
         <div className="form-group">
           <label htmlFor="email">Email</label>
           <input
           placeholder="yourname@email.com"
             type="email"
+            name="email"
             className={`form-control ${errors.email ? "is-invalid" : ""}`}
             id="email"
             {...register("email", {
@@ -111,7 +130,7 @@ function ContactPage() {
       <label htmlFor="check">You agree to providing your data to {name} who may contact you.</label>
         </div>
         
-        <button type="submit" className="btn__submit"
+        <button type="submit" id="btn__submit" className="btn__submit"
         disabled={errors.firstname || errors.lastname || errors.email || errors.message || errors.checkbox ? true : false} >
           Send message
         </button>
