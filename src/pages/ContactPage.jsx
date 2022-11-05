@@ -55,7 +55,7 @@ function ContactPage() {
                   errors.firstname ? "is-invalid" : ""
                 }`}
                 id="first_name"
-                {...register("firstname", { required: "" })}
+                {...register("firstname", { required: "please enter first name" })}
                 onKeyUp={() => trigger("firstname")}
               />
               {/* firstname error message */}
@@ -78,7 +78,7 @@ function ContactPage() {
                   errors.lastname ? "is-invalid" : ""
                 }`}
                 id="last_name"
-                {...register("lastname", { required: "" })}
+                {...register("lastname", { required: "please enter last name" })}
                 onKeyUp={() => trigger("lastname")}
               />
               {/* lastname error message */}
@@ -100,7 +100,7 @@ function ContactPage() {
               className={`form-control ${errors.email ? "is-invalid" : ""}`}
               id="email"
               {...register("email", {
-                required: "",
+                required: "please enter email",
                 pattern: {
                   value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
                   message: "",
@@ -142,10 +142,13 @@ function ContactPage() {
               value="check"
               // checkbox validation
               {...register("check", { required: "" })}
-              onKeyUp={() => trigger("check")} // checkbox error message
+              onKeyUp={() => trigger("check")}
             />
 
+                     
+
             <span className="checkmark"></span>
+            
             <label htmlFor="check">
               You agree to providing your data to {name} who may contact you.
             </label>
