@@ -51,7 +51,7 @@ export default function MainSection() {
      </a>)
 }
 
-<Link to='/contact' className="linkcontainer_btn" id='contact'>contact me</Link>
+<Link to='/contact' className="linkcontainer_btn" id='contact'>Contact Me</Link>
 
 
  </div>

@@ -142,7 +142,7 @@ function ContactPage() {
               value="check"
               // checkbox validation
               {...register("check", { required: "" })}
-              onKeyUp={() => trigger("check")}
+              onKeyUp={() => trigger("check")} // checkbox error message
             />
 
             <span className="checkmark"></span>
