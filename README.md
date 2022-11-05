@@ -24,13 +24,14 @@ Task details:
 - A Link styles as a Button with an id **‘book\_\_design’** that redirects to to [https://books.zuri.team/design-rules](https://books.zuri.team/design-rules) where you pitch the free design book offered by Zuri.
 
 
-2nd Task Details:
-Continue from the stage 1 task,
-Add another anchor tag styled as a Button with an id of 'contact' that redirects to “/contact” page in your app.
-NB. The contact page path must be "/contact"
-The contact page should have a form with the following details:
-A First and last name input fields with ids ‘first_name’ and ‘last_name’ respectively
-An Email address input field with an id of ‘email’
-A Textarea with an id of ‘message’ to contain the message of the person
-A button with an id of ‘btn__submit’ that will submit the form
-All fields should have appropriate label tags
+# 2nd Task Details:
+## Continue from the stage 1 task,
+- Add another anchor tag styled as a Button with an id of 'contact' that redirects to “/contact” page in your app.
+## NB. 
+- The contact page path must be "/contact"
+- The contact page should have a form with the following details:
+- A First and last name input fields with ids ‘first_name’ and ‘last_name’ respectively
+- An Email address input field with an id of ‘email’
+- A Textarea with an id of ‘message’ to contain the message of the person
+- A button with an id of ‘btn__submit’ that will submit the form
+- All fields should have appropriate label tags
